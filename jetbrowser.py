@@ -34,6 +34,7 @@ class CustomGraphicsView(QtWidgets.QGraphicsView):
     def __init__(self, scene):
         QtWidgets.QGraphicsView.__init__(self, scene)
         self.setWindowIcon(QtGui.QIcon('icon.png'))
+        self.setStyleSheet("background-color: black; border: none")
         self.setDragMode(QtWidgets.QGraphicsView.ScrollHandDrag)
         self.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
         self.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
