@@ -114,11 +114,12 @@ def update_image():
     zipFile.close()
 
 
-# fit_height doesn't work on zoomed or translated content
 def fit_height():
     reset()
     scale = graphics_view.height() / image_rect.height()
     graphics_view.scale(scale, scale)
+    x = (graphics_view.width() - scale * image_rect.width()) * 0.5
+    image.setPos(graphics_view.mapToScene(x, 0))
 
 
 def fit_width():
