@@ -157,4 +157,4 @@ if __name__ == "__main__":
 
     graphics_view.showMaximized()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
