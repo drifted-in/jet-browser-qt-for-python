@@ -9,7 +9,7 @@ A desktop app for browsing parish book scans distributed in ZIP files.
 3. Install Nuitka `pip install nuitka`
    
 # Building
-1. Build the release `nuitka --onefile --windows-onefile-tempdir --plugin-enable=pyside6 jetbrowser.py`
+1. Build the release `nuitka --onefile --windows-onefile-tempdir --windows-disable-console --plugin-enable=pyside6 jetbrowser.py`
 2. Verify the output stored in the project root directory `jetbrowser.exe`
 
 ## Running
